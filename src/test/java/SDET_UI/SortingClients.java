@@ -1,4 +1,4 @@
 package SDET_UI;
 
-public class SortingClients {
+public class SortingClients extends BaseTest{
 }

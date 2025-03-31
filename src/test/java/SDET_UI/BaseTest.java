@@ -19,7 +19,7 @@ public class BaseTest extends BasePage {
     }
 
     public static char numberToLetter(int num) {
-        num = num % 26; // Обрабатываем числа > 25
+        num = num % 26;
         return (char) ('a' + num);
     }
 

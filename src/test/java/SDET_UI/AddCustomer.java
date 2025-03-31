@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 import java.util.Random;
 
@@ -18,12 +17,9 @@ public class AddCustomer extends BaseTest{
                 .until(ExpectedConditions.elementToBeClickable(
                         By.xpath("//button[@ng-click='addCust()']")));
         addCustomerButton.click();
-
-        //Assert.assertEquals(baseUrl, baseUrl+"/addCust");
     }
 
     int[] arrayForPostCodeField = new int[10];
-    //int lengthOfArrayForFirstName = arrayForPostCodeField.length / 2;
 
     @Test
     public void PostCodeFieldFilling() {
@@ -47,7 +43,7 @@ public class AddCustomer extends BaseTest{
     public void firstNameFieldFilling() {
         WebElement postCodeFieldContent = driver.findElement(By.xpath("//input[@placeholder='Post Code']"));
         String realPostCodeContent = (String) ((JavascriptExecutor)driver).executeScript("return arguments[0].value", postCodeFieldContent);
-        //String realPostCodeContent = postCodeFieldContent.getDomAttribute("realPostCodeContent");
+
         int[] arrayForFirstNameField = new int[5];
         for (int i = 0; i < 5; i++) {
             arrayForFirstNameField[i] = Integer.parseInt(realPostCodeContent.substring(i * 2, i * 2 + 2));
