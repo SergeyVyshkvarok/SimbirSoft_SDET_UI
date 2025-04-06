@@ -4,12 +4,7 @@
     <test verbose="2" preserve-order="true" name="G:/GitHub/SDET_UI">
         <classes><class name="SDET_UI.AddCustomer">
             <methods>
-                <include name="AddCustomer"/>
-                <include name="PostCodeFieldFilling"/>
-                <include name="firstNameFieldFilling"/>
-                <include name="lastNameFieldFilling"/>
-                <include name="buttonAddCustomersClickToSubmit"/>
-                <include name="checkAlertString"/>
+                <include name="addCustomerTest"/>
             </methods>
         </class>
         </classes>
