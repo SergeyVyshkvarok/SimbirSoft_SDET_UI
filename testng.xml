@@ -7,6 +7,9 @@
                 <include name="AddCustomer"/>
                 <include name="PostCodeFieldFilling"/>
                 <include name="firstNameFieldFilling"/>
+                <include name="lastNameFieldFilling"/>
+                <include name="buttonAddCustomersClickToSubmit"/>
+                <include name="checkAlertString"/>
             </methods>
         </class>
         </classes>
