@@ -20,7 +20,7 @@ public class BasePage {
 
         try {
             properties = new Properties();
-            fis = new FileInputStream("src/main/resources/config.properties");
+            fis = new FileInputStream("src/test/resources/config.properties");
             properties.load(fis);
 
             browser = properties.getProperty("browser");
