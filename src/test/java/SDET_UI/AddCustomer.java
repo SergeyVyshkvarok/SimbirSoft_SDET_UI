@@ -12,7 +12,7 @@ import java.util.Random;
 public class AddCustomer extends BaseTest{
 
     @Test
-    public void AddCustomer() throws InterruptedException {
+    public void testAddCustomerButton() throws InterruptedException {
         WebElement addCustomerButton = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.elementToBeClickable(
                         By.xpath("//button[@ng-click='addCust()']")));
@@ -22,14 +22,14 @@ public class AddCustomer extends BaseTest{
     int[] arrayForPostCodeField = new int[10];
 
     @Test
-    public void PostCodeFieldFilling() {
+    public void testPostCodeFieldFilling() {
         Random random = new Random();
 
         String postCodeValue = "";
 
         for (int i = 0; i < 10; i++) {
             arrayForPostCodeField[i] = random.nextInt(0, 10);
-            postCodeValue+= arrayForPostCodeField[i];
+            postCodeValue += arrayForPostCodeField[i];
         }
 
         WebElement postCodeField = new WebDriverWait(driver, Duration.ofSeconds(5))
@@ -40,7 +40,7 @@ public class AddCustomer extends BaseTest{
     }
 
     @Test
-    public void firstNameFieldFilling() {
+    public void testfirstNameFieldFilling() {
         WebElement postCodeFieldContent = driver.findElement(By.xpath("//input[@placeholder='Post Code']"));
         String realPostCodeContent = (String) ((JavascriptExecutor)driver).executeScript("return arguments[0].value", postCodeFieldContent);
 
@@ -55,6 +55,14 @@ public class AddCustomer extends BaseTest{
         }
         WebElement firstNameField = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
         firstNameField.sendKeys(sb.toString());
+    }
+
+    @Test
+    public void testButtonAddCustomersClickToSubmit() {
+        WebElement submitButton = new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.elementToBeClickable(
+                        By.xpath("//button[@type='submit']")));
+        submitButton.click();
     }
 
 
