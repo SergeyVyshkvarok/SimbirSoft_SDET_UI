@@ -10,6 +10,8 @@ public class MainPage extends BasePage {
 
     @FindBy(xpath = "//button[@ng-click='addCust()']")
     private WebElement addCustomerButton;
+    @FindBy(xpath = "//button[@ng-click='showCust()']")
+    private WebElement customersButton;
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -18,5 +20,10 @@ public class MainPage extends BasePage {
     public AddCustomerPage goOnAddCustomerPage() {
         getWait5().until(ExpectedConditions.visibilityOf(addCustomerButton)).click();
         return new AddCustomerPage(getDriver());
+    }
+
+    public CustomersPage goOnSortingCustomersPage() {
+        getWait5().until(ExpectedConditions.visibilityOf(customersButton)).click();
+        return new CustomersPage(getDriver());
     }
 }

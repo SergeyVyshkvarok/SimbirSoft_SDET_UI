@@ -18,7 +18,6 @@ public class AddCustomerNew extends BaseTest {
                 .buttonAddCustomersClickToSubmit()
                 .checkAlertString();
 
-
         Assert.assertTrue(actualAlertText.contains(expectedMessage));
     }
 }
