@@ -18,6 +18,7 @@ public class AddCustomerNew extends BaseTest {
                 .buttonAddCustomersClickToSubmit()
                 .checkAlertString();
 
-        Assert.assertTrue(actualAlertText.contains("Customer added successfully with customer id:"));
+
+        Assert.assertTrue(actualAlertText.contains(expectedMessage));
     }
 }

@@ -14,6 +14,7 @@ public abstract class BaseTest {
     private WebDriverWait wait5;
     private WebDriver driver;
     private static final String BASE_URL = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager";
+    public String expectedMessage = "Customer added successfully with customer id:";
 
     @BeforeMethod(description = "Browser startUp")
     protected void beforeMethod() {

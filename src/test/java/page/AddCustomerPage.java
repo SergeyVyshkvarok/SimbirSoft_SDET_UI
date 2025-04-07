@@ -8,14 +8,14 @@ import java.util.Random;
 
 public class AddCustomerPage extends BasePage {
 
+    @FindBy(xpath = "//input[@placeholder='Post Code']")
+    private WebElement postCodeField;
+
     @FindBy(xpath = "//input[@placeholder='First Name']")
     private WebElement firstNameField;
 
     @FindBy(xpath = "//input[@placeholder='Last Name']")
     private WebElement lastNameField;
-
-    @FindBy(xpath = "//input[@placeholder='Post Code']")
-    private WebElement postCodeField;
 
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement submitButton;
@@ -25,6 +25,8 @@ public class AddCustomerPage extends BasePage {
     }
 
     public AddCustomerPage fillPostCode() {
+        getWait5().until(ExpectedConditions.visibilityOf(postCodeField));
+
         int[] arrayForPostCodeField = new int[10];
 
         Random random = new Random();
@@ -75,8 +77,9 @@ public class AddCustomerPage extends BasePage {
     }
 
     public String checkAlertString() {
-        Alert alert = getDriver().switchTo().alert();
+        Alert alert = getWait5().until(ExpectedConditions.alertIsPresent());
         String alertText = alert.getText();
+        alert.accept();
 
         return alertText;
     }
