@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba60379-95a9-441b-a190-0f9f3897d259" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/AddCustomerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/AddCustomerNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/DeleteClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/SortingClients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+    <list default="true" id="dba60379-95a9-441b-a190-0f9f3897d259" name="Changes" comment="теперь точно скорректировал testng.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/AddCustomerNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/AddCustomerNew.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +22,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -43,23 +39,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "G:/GitHub/SDET_UI_NEW/src/test",
-    "onboarding.tips.debug.path": "G:/GitHub/SDET_UI_NEW/src/main/java/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/GitHub/SDET_UI_NEW/src/test&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;G:/GitHub/SDET_UI_NEW/src/main/java/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\GitHub\SDET_UI_NEW\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddCustomerNew">
+  <component name="RunManager" selected="TestNG.AddCustomerNew (1)">
+    <configuration name="AddCustomerNew (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDET_UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.AddCustomerNew" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddCustomerNew" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="allureTestNGExample" />
       <extension name="coverage">
@@ -97,12 +117,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddCustomerNew (1)" />
         <item itemvalue="TestNG.AddCustomerNew" />
         <item itemvalue="TestNG.AddCustomerNew.addCustomerTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Sergio\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dba60379-95a9-441b-a190-0f9f3897d259" name="Changes" comment="" />
@@ -111,7 +135,49 @@
       <option name="presentableId" value="Default" />
       <updated>1743827137622</updated>
     </task>
+    <task id="LOCAL-00001" summary="исправленная версия задания первой недели(SDET UI)">
+      <option name="closed" value="true" />
+      <created>1743956071767</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743956071767</updated>
+    </task>
+    <task id="LOCAL-00002" summary="скорректировал testng.xml">
+      <option name="closed" value="true" />
+      <created>1743962163827</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743962163827</updated>
+    </task>
+    <task id="LOCAL-00003" summary="теперь точно скорректировал testng.xml">
+      <option name="closed" value="true" />
+      <created>1743962379233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743962379233</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="исправленная версия задания первой недели(SDET UI)" />
+    <MESSAGE value="скорректировал testng.xml" />
+    <MESSAGE value="теперь точно скорректировал testng.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="теперь точно скорректировал testng.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
